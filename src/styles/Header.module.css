@@ -1,0 +1,233 @@
+/* Header.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.234);
+  /* Semi-transparent white background */
+  backdrop-filter: blur(10px);
+  /* Apply blur effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  /* Ensure it's above other content */
+}
+
+.navbtn {
+  border: 2px solid dimgray;
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.loaderContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 10px rgba(138, 138, 138, 0.687);
+  padding: 1rem 2rem;
+  /* Adjust padding */
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  /* Ensure navbar width is always 100% */
+  box-sizing: border-box;
+  /* Include padding and border in the width */
+  font-family: roboto;
+  height: 8rem;
+}
+
+.collegelogo {
+  height: 4rem;
+  /* Adjust logo size */
+  max-width: 150px;
+  cursor: pointer;
+}
+
+.menu {
+  display: inline;
+  justify-content: space-between;
+  width: auto;
+  /* Adjust width */
+}
+
+.navbtn {
+  border: none;
+  background: transparent;
+}
+
+.menu button:hover {
+  cursor: pointer;
+}
+
+.line {
+  font-size: 3rem;
+  margin: 5px;
+  display: none;
+}
+
+.dynamic {
+  padding: 0.8rem 1.5rem;
+  /* Adjust padding */
+  border-radius: 7px;
+  background: rgb(65, 65, 232);
+  border: none;
+  color: white;
+  margin-right: 2rem;
+  font-family: roboto;
+}
+
+/* Add this media query at the end */
+@media screen and (max-width: 768px) {
+  .line {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    right: 1.5rem;
+    margin-top: 2rem;
+    position: absolute;
+    top: 3.92rem;
+    width: 48%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 10px rgba(138, 138, 138, 0.687);
+    padding: 0 1rem;
+    border-top: 2px solid #ccc;
+  }
+
+  .navbtn {
+    border: none;
+    border-radius: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .menu.open {
+    display: block;
+  }
+
+  .menu button {
+    font-size: 1.2rem;
+    padding: 2rem;
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+
+  .menu button:hover {
+    background-color: #f9f9f9;
+    /* Whitish background on hover */
+    border-bottom: 2px solid #ccc;
+    /* Underline on hover */
+  }
+
+  .menu .login {
+    font-size: 1.2rem;
+    padding: 1.2rem 1rem;
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu .login:hover {
+
+    background-color: #f9f9f9;
+    /* Whitish background on hover */
+    border-bottom: 2px solid #ccc;
+    /* Underline on hover */
+  }
+
+  .dynamic {
+    width: 100%;
+    background-color: white;
+    border: none;
+    padding: 1rem 0;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .Resources {
+    padding: 1rem;
+  }
+
+  .Contact {
+    padding: 1rem;
+  }
+}
+
+.drawer {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.drawer.open {
+  transform: translateX(0);
+}
+
+.drawer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.drawer li {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.drawer a {
+  text-decoration: none;
+  color: #333;
+}
+
+.drawer a:hover {
+  color: #555;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .collegelogo {
+    height: 3rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .drawer {
+    display: block;
+  }
+}

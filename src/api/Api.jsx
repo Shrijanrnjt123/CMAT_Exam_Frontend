@@ -1,0 +1,21 @@
+const url = "http://localhost:7000/api/v1";
+
+export const reg_user = `${url}/user/register`;
+export const login_reg = `${url}/user/login`;
+export const admin_add = `${url}/admin/addmodel`;
+export const paid_req = `${url}/admin/getallrequests`;
+export const question_view = `${url}/user/freemodels`;
+export const admin_del_questions = `${url}/admin/deletemodel`;
+export const admin_allusers = `${url}/admin/getAlluser`;
+export const admin_excel = `${url}/admin/getExcel`;
+export const student_status = `${url}/user/getstatus`;
+export const paid_exam = `${url}/user/paidmodel`;
+export const req_mock = `${url}/user/requestmock`;
+export const change_status = `${url}/user/changestatus`;
+export const send_Result = `${url}/user/sendresult`;
+export const get_Result = `${url}/user/getuserresults`;
+export const entrance_result = `${url}/admin/getentranceresult`;
+export const chngEntStat = `${url}/user/userentstatus`; // post ....hit by student to change ent and admin to change all
+export const entrance_status = `${url}/user/entrancestatus`; //get
+export const entranceToggle = `${url}/admin/changeentranceststus`; //post
+export const update_details = `${url}/user/updatedetails`; //post

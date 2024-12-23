@@ -1,0 +1,84 @@
+/* Container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Text styles */
+.containerText1,
+.containerText2,
+.containerText3 {
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Specific text styles */
+.containerText1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.containerText2 {
+  font-size: 20px;
+  color: #555;
+}
+
+.containerText3 {
+  font-size: 16px;
+  color: #777;
+  max-width: 600px;
+}
+
+/* Button styles */
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(65, 65, 232);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Link styles */
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .containerText1 {
+    font-size: 20px;
+  }
+
+  .containerText2 {
+    font-size: 18px;
+  }
+
+  .containerText3 {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

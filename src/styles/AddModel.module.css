@@ -1,0 +1,158 @@
+.noOfQuestions {
+  padding: 1.2rem; /* Increased padding */
+  border-radius: 5px;
+  margin-top: 18vh;
+  margin-right: 1.5rem;
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.inputfromUser {
+  margin-left: 20%;
+}
+
+.send {
+  padding: 1rem; /* Increased padding */
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(65, 65, 232);
+  color: white;
+  font-size: 1rem; /* Increased font size */
+}
+
+.question {
+  width: 60%; /* Increased width */
+  height: 2.5rem; /* Increased height */
+  margin-bottom: 2rem; /* Increased margin-bottom */
+  padding: 1.2rem 2.5rem; /* Increased padding */
+  font-size: 1.5rem; /* Increased font size */
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20%;
+}
+
+.question-index {
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.options {
+  padding: 1rem 2.5rem; /* Increased padding */
+  margin-bottom: 1.2rem; /* Increased margin-bottom */
+  box-sizing: border-box;
+  width: 60%; /* Increased width */
+  margin-left: 20%;
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.formtext h2 {
+  display: inline;
+  margin-left: 20%;
+  font-size: 1.5rem; /* Increased font size */
+  color: rgb(92, 92, 92);
+}
+
+.questionmaindiv {
+  margin-top: 1.2rem; /* Increased margin-top */
+}
+
+.cont {
+  display: flex;
+  margin-left: 20%;
+}
+
+.submit {
+  padding: 1.2rem 1.5rem; /* Increased padding */
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(65, 65, 232);
+  color: white;
+  font-size: 1rem; /* Increased font size */
+  margin-bottom: 4rem;
+  margin-left: 20%;
+}
+
+.optionContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem; /* Increased margin-bottom */
+}
+
+.buttonRadio {
+  margin-left: 0.7rem; /* Increased margin-left */
+  margin-bottom: 1.5rem; /* Increased margin-bottom */
+  width: 3.5rem; /* Increased width */
+  height: 1.5rem; /* Increased height */
+  cursor: pointer;
+}
+
+.correctOption {
+  margin-left: 0.3rem; /* Increased margin-left */
+  color: green;
+  font-weight: bold;
+  margin-bottom: 1.5rem; /* Increased margin-bottom */
+}
+
+.optionscorrectNo {
+  padding: 1rem 2.5rem; /* Increased padding */
+  margin-bottom: 1.2rem; /* Increased margin-bottom */
+  box-sizing: border-box;
+  width: 60%; /* Increased width */
+  margin-left: 20%;
+  border: none;
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 5rem; /* Increased width */
+  height: 2.5rem; /* Increased height */
+  margin-left: 2.8rem;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2rem; /* Increased height */
+  width: 2rem; /* Increased width */
+  left: 0.25rem;
+  bottom: 0.25rem;
+  background-color: whitesmoke;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 0.2rem #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(2.5rem); /* Adjusted translation */
+  -ms-transform: translateX(2.5rem); /* Adjusted translation */
+  transform: translateX(2.5rem); /* Adjusted translation */
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 1.5rem; /* Increased border-radius */
+}
+
+.paid {
+  font-size: 2rem; /* Increased font size */
+  font-weight: 500;
+}

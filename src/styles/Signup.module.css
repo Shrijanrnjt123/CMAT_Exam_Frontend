@@ -1,0 +1,108 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.234);
+  /* Semi-transparent white background */
+  backdrop-filter: blur(10px);
+  /* Apply blur effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  /* Ensure it's above other content */
+}
+
+.loaderContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  margin: 10rem auto;
+
+  /* Center the container */
+}
+
+body {
+  overflow: hidden;
+}
+
+.signupText {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+.signupInput {
+  width: 87%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  font-size: 2rem;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.containerButton {
+  width: 35%;
+  padding: 1.5rem;
+  background-color: rgb(65, 65, 232);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.containerButton:hover {
+  background-color: #8b2fa8;
+
+}
+
+.para {
+  color: #666;
+  font-size: 2rem;
+}
+
+.paratext {
+  color: #741175;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.paratext:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1000px) {
+  .wrapper {
+    max-width: 450px;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+}

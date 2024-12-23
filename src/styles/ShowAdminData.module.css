@@ -1,0 +1,67 @@
+.userContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 3rem;
+  margin-bottom: 1.9rem;
+  width: 80%;
+  margin-left: 2rem;
+}
+
+.userCard {
+  display: flex;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.3rem;
+  border: 1px solid black;
+  margin-left: 20%;
+}
+
+.userIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(65, 65, 232);
+  color: #fff;
+  padding: 20px;
+}
+
+.userDetails {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.userHeader {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.userHeader:hover {
+  background-color: #ddd;
+}
+
+.userInfo {
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .userCard {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .userContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 0rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
